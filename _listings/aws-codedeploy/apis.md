@@ -29,7 +29,7 @@ apis:
   tags: Revisions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-listapplicationrevisions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-registerapplicationrevision-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codedeploy
