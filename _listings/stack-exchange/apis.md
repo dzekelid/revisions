@@ -26,20 +26,20 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stack Exchange Get Post Revisions
-  description: "Returns edit revisions for the posts identified in ids.\n \n{ids}
-    can contain up to 100 semicolon delimited ids, to find ids programatically look
-    for post_id, answer_id, or question_id on post, answer, and question objects respectively.\n
-    \nThis method returns a list of revisions."
+- name: Stack Exchange Get Revisions
+  description: "Returns edit revisions identified by ids in {ids}.\n \n{ids} can contain
+    up to 20 semicolon delimited ids, to find ids programatically look for revision_guid
+    on revision objects. Note that unlike most other id types in the API, revision_guid
+    is a string.\n \nThis method returns a list of revisions."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/253_logo.png
   humanURL: https://stackexchange.com/
   baseURL: https://api.stackexchange.com//2.2
   tags: Revisions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/stack-exchange/posts-ids-revisions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/stack-exchange/revisions-ids-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/stack-exchange/posts-ids-revisions-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/stack-exchange/revisions-ids-get-postman.md
 x-common:
 - type: x-authentication
   url: https://api.stackexchange.com/docs/authentication
