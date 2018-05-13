@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeDeploy API
+  title: AWS CodeDeploy API Register Application Revision
   version: 1.0.0
+  description: Registers with AWS CodeDeploy a revision for the specified application.
 schemes:
 - http
 produces:
