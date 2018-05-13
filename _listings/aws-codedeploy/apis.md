@@ -30,15 +30,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-registerapplicationrevision-get.md
-- name: AWS CodeDeploy API Batch Get Application Revisions
-  description: Gets information about one or more application revisions.
+- name: AWS CodeDeploy API Get Application Revision
+  description: Gets information about an application revision.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
   humanURL: https://aws.amazon.com/codedeploy/
   baseURL: http:://{host}//
   tags: Revisions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-batchgetapplicationrevisions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-getapplicationrevision-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codedeploy
