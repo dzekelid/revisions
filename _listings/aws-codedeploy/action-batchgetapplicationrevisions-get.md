@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeDeploy API
+  title: AWS CodeDeploy API Batch Get Application Revisions
   version: 1.0.0
+  description: Gets information about one or more application revisions.
 schemes:
 - http
 produces:
