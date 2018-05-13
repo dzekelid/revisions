@@ -30,7 +30,36 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-registerapplicationrevision-get.md
+- name: AWS CodeDeploy API Batch Get Application Revisions
+  description: Gets information about one or more application revisions.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
+  humanURL: https://aws.amazon.com/codedeploy/
+  baseURL: http:://{host}//
+  tags: Revisions
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/action-batchgetapplicationrevisions-get.md
 x-common:
+- type: x-command-line-interface
+  url: http://docs.aws.amazon.com/cli/latest/reference/codedeploy
+- type: x-documentation
+  url: http://docs.aws.amazon.com/codedeploy/latest/APIReference
+- type: x-faq
+  url: https://aws.amazon.com/codedeploy/faqs/
+- type: x-forum
+  url: https://forums.aws.amazon.com/forum.jspa?forumID=179
+- type: x-getting-started
+  url: https://aws.amazon.com/codedeploy/getting-started/
+- type: x-integrations
+  url: https://aws.amazon.com/codedeploy/product-integrations/
+- type: x-partners
+  url: https://aws.amazon.com/solutions/partners/dev-ops/
+- type: x-pricing
+  url: https://aws.amazon.com/codedeploy/pricing/
+- type: x-tutorials
+  url: https://aws.amazon.com/codedeploy/developer-resources/#tutorials
+- type: x-website
+  url: https://aws.amazon.com/codedeploy/
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codedeploy
 - type: x-documentation
