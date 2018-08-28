@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS CodeDeploy
 x-complete: 1
@@ -27,27 +26,6 @@ paths:
       - in: query
         name: revisions
         description: Information to get about the application revisions, including
-          type and            location
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Application Revisions
-  /?Action=GetApplicationRevision:
-    get:
-      summary: Get Application Revision
-      description: Gets information about an application revision.
-      operationId: getApplicationRevision
-      x-api-path-slug: actiongetapplicationrevision-get
-      parameters:
-      - in: query
-        name: applicationName
-        description: The name of the application that corresponds to the revision
-        type: string
-      - in: query
-        name: revision
-        description: Information about the application revision to get, including
           type and            location
         type: string
       responses:
@@ -99,6 +77,27 @@ paths:
           description: OK
       tags:
       - Application Revisions
+  /?Action=GetApplicationRevision:
+    get:
+      summary: Get Application Revision
+      description: Gets information about an application revision.
+      operationId: getApplicationRevision
+      x-api-path-slug: actiongetapplicationrevision-get
+      parameters:
+      - in: query
+        name: applicationName
+        description: The name of the application that corresponds to the revision
+        type: string
+      - in: query
+        name: revision
+        description: Information about the application revision to get, including
+          type and            location
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Application Revisions
   /?Action=RegisterApplicationRevision:
     get:
       summary: Register Application Revision
@@ -125,4 +124,3 @@ paths:
           description: OK
       tags:
       - Application Revisions
----

@@ -2,7 +2,7 @@
   "info": {
     "name": "Apigee Edge Get Organizations Name Environments Env Name API Name Revisions Revision Number Deployments",
     "_postman_id": "b96c935a-8690-4d9f-a39a-e8cd7546ab97",
-    "description": "Gets the deployments for an API Proxyâs revision for an environment in an organization.",
+    "description": "Gets the deployments for an API Proxy�????s revision for an environment in an organization.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -164,7 +164,7 @@
             "body": {
               "mode": "raw"
             },
-            "description": "Gets the deployments for an API Proxyâs revision for an environment in an organization."
+            "description": "Gets the deployments for an API Proxy�????s revision for an environment in an organization."
           },
           "response": [
             {

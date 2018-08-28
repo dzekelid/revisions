@@ -75,6 +75,28 @@ paths:
       - Revisions
       - Revision
       - Id
+    post:
+      summary: Revert to revision
+      description: Revert to revision.
+      operationId: revert-to-revision
+      x-api-path-slug: coursescourse-idpagesurlrevisionsrevision-id-post
+      parameters:
+      - in: query
+        name: revision_id
+        description: The revision to revert to (use the List Revisions API to see
+          available revisions)
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Pages
+      - Url
+      - Revisions
+      - Revision
+      - Id
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

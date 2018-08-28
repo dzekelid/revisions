@@ -7,14 +7,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbo
 x-kinRank: "10"
 x-alexaRank: "89"
 tags: Revisions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Dropbox Core Obtains metadata for all available revisions of a file, including
-    the current revision.
-  x-api-slug: dropbox-core
+- name: Dropbox Core API v1 - Obtains metadata for all available revisions of a file,
+    including the current revision.
+  x-api-slug: revisionsrootpath-get
   description: |-
     Obtains metadata for all available revisions of a file, including the current revision.
 
@@ -23,47 +23,34 @@ apis:
     with the `/restore` call to revert the file to its previous state.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//revisions/{root}/{path}
-  tags: Storage,Documents,Revisions,Root,Path
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/revisionsrootpath-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/revisionsrootpath-get-openapi.md
-- name: Dropbox Core
-  x-api-slug: dropbox-core
-  description: Dropbox is a modern workspace designed to reduce busywork-so you can
-    focus on the things that matter. Sign in and put your creative energy to work.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1
-  tags: Revisions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/openapi.md
-- name: Dropbox Datastore API Get Revisions
-  x-api-slug: dropbox-datastore-api
+- name: Dropbox - Get Revisions
+  x-api-slug: revisions-get
   description: /revisions
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//revisions
-  tags: Revisions
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/revisions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/revisions-get-openapi.md
-- name: Dropbox Datastore API
-  x-api-slug: dropbox-datastore-api
-  description: Keep your apps structured data in sync with Dropbox
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1
-  tags: Revisions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/dropbox/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://donorschoose.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://dropbox.stack.network
 - type: x-application-management
   url: https://www.dropbox.com/developers/apps
 - type: x-base

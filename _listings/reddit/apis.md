@@ -7,43 +7,40 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddi
 x-kinRank: "9"
 x-alexaRank: "6"
 tags: Revisions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/reddit/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Reddit Get Subreddit Wiki Revisions
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Revisions
+  x-api-slug: rsubredditwikirevisions-getnbsp
   description: Retrieve a list of recently changed wiki pages in this subreddit
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions
-  tags: Subreddit, Wiki, Revisions
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/reddit/rsubredditwikirevisions-getnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Revisions Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Revisions Page
+  x-api-slug: rsubredditwikirevisionspage-getnbsp
   description: Retrieve a list of revisions of this wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions/page
-  tags: Subreddit, Wiki, Revisions, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/reddit/rsubredditwikirevisionspage-getnbsp-openapi.md
-- name: Reddit
-  x-api-slug: reddit
-  description: Reddit is a community of millions of users engaging in the creation
-    of content and the sharing of conversation across tens of thousands of topics.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
-  humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com//
-  tags: Revisions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/reddit/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://rebilly.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://reddit.stack.network
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
 - type: x-base

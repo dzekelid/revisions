@@ -9,45 +9,133 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Revisions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Flat List the revisions
-  x-api-slug: flat
+- name: Flat - List the revisions
+  x-api-slug: scoresscorerevisions-get
   description: |-
     When creating a score or saving a new version of a score, a revision is created in our storage. This method allows you to list all of them, sorted by last modification.
 
     Depending the plan of the account, this list can be trunked to the few last revisions.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
   humanURL: http://flat.io
-  baseURL: https://api.flat.io//v2//scores/{score}/revisions
-  tags: List,Revisions
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisions-get-openapi.md
-- name: Flat
-  x-api-slug: flat
-  description: 'The Flat API allows you to easily extend the abilities of the [Flat
-    Platform](https://flat.io), with a wide range of use cases including the following:
-    Creating and importing new music scores using MusicXML or MIDI files. Browsing,
-    updating, copying, exporting the users scores (for example in MP3, WAV or MIDI).
-    Managing educational resources with Flat for Education: creating &amp; updating
-    the organization accounts, the classes, rosters and assignments. The Flat API
-    is built on HTTP. Our API is RESTful It has predictable resource URLs. It returns
-    HTTP response codes to indicate errors. It also accepts and returns JSON in the
-    HTTP body.'
+- name: Flat - Create a new revision
+  x-api-slug: scoresscorerevisions-post
+  description: Update a score by uploading a new revision for this one.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
   humanURL: http://flat.io
   baseURL: https://api.flat.io//v2
-  tags: Revisions
+  tags: API Provider, Music, Profiles, Relative Data, General Data
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisions-post-openapi.md
+- name: Flat - Get a score revision
+  x-api-slug: scoresscorerevisionsrevision-get
+  description: |-
+    When creating a score or saving a new version of a score, a revision is created in our storage. This method allows you to get a specific
+    revision metadata.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevision-get-openapi.md
+- name: Flat - Get a score revision data
+  x-api-slug: scoresscorerevisionsrevisionformat-get
+  description: |-
+    Retrieve the file corresponding to a score revision (the following formats are available: Flat JSON/Adagio JSON `json`, MusicXML
+    `mxl`/`xml`, MP3 `mp3`, WAV `wav`, MIDI `midi`, or a tumbnail of the first page `thumbnail.png`).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevisionformat-get-openapi.md
+- name: Flat - Create a new revision
+  x-api-slug: scoresscorerevisions-post
+  description: Update a score by uploading a new revision for this one.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisions-post-openapi.md
+- name: Flat - Get a score revision
+  x-api-slug: scoresscorerevisionsrevision-get
+  description: |-
+    When creating a score or saving a new version of a score, a revision is created in our storage. This method allows you to get a specific
+    revision metadata.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevision-get-openapi.md
+- name: Flat - Get a score revision data
+  x-api-slug: scoresscorerevisionsrevisionformat-get
+  description: |-
+    Retrieve the file corresponding to a score revision (the following formats are available: Flat JSON/Adagio JSON `json`, MusicXML
+    `mxl`/`xml`, MP3 `mp3`, WAV `wav`, MIDI `midi`, or a tumbnail of the first page `thumbnail.png`).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevisionformat-get-openapi.md
+- name: Flat - Get a score revision data
+  x-api-slug: scoresscorerevisionsrevisionformat-get
+  description: |-
+    Retrieve the file corresponding to a score revision (the following formats are available: Flat JSON/Adagio JSON `json`, MusicXML
+    `mxl`/`xml`, MP3 `mp3`, WAV `wav`, MIDI `midi`, or a tumbnail of the first page `thumbnail.png`).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevisionformat-get-openapi.md
+- name: Flat - Get a score revision
+  x-api-slug: scoresscorerevisionsrevision-get
+  description: |-
+    When creating a score or saving a new version of a score, a revision is created in our storage. This method allows you to get a specific
+    revision metadata.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisionsrevision-get-openapi.md
+- name: Flat - Create a new revision
+  x-api-slug: scoresscorerevisions-post
+  description: Update a score by uploading a new revision for this one.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flat-logo.png
+  humanURL: http://flat.io
+  baseURL: https://api.flat.io//v2
+  tags: API Provider, Music, Profiles, Relative Data, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/flat/scoresscorerevisions-post-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://fitbit.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://flat.stack.network
 - type: x-developer
   url: https://flat.io/developers
 - type: x-embeddable

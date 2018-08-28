@@ -15,6 +15,43 @@ produces:
 consumes:
 - application/json
 paths:
+  /revisions/{root}/{path}:
+    get:
+      summary: Obtains metadata for all available revisions of a file, including the
+        current revision.
+      description: |-
+        Obtains metadata for all available revisions of a file, including the current revision.
+
+        Only revisions up to thirty days old are available (or more if the Dropbox user has
+        [Extended Version History](https://www.dropbox.com/help/113)). You can use the revision number in conjunction
+        with the `/restore` call to revert the file to its previous state.
+      operationId: obtains-metadata-for-all-available-revisions-of-a-file-including-the-current-revisiononly-revisions-
+      x-api-path-slug: revisionsrootpath-get
+      parameters:
+      - in: query
+        name: locale
+        description: The metadata returned will have its `size` field translated based
+          on the given `locale`
+      - in: path
+        name: path
+        description: The path to the file
+      - in: query
+        name: rev_limit
+        description: Default is 10
+      - in: path
+        name: root
+        description: 'Root folder: `auto` - automatically determines the appropriate
+          root folder using your apps permissionlevel (recommended); `sandbox` - the
+          codename for app folder level; `dropbox` - full dropbox access'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Storage
+      - Documents
+      - Revisions
+      - Root
+      - Path
   /revisions:
     get:
       summary: Get Revisions

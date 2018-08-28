@@ -12,68 +12,82 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Revisions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS CodeDeploy API Batch Get Application Revisions
-  x-api-slug: aws-codedeploy-api
+- name: AWS CodeDeploy API - Batch Get Application Revisions
+  x-api-slug: actionbatchgetapplicationrevisions-get
   description: Gets information about one or more application revisions.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
   humanURL: https://aws.amazon.com/codedeploy/
-  baseURL: ://///?Action=BatchGetApplicationRevisions
-  tags: Application Revisions
+  baseURL: :///
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionbatchgetapplicationrevisions-get-openapi.md
-- name: AWS CodeDeploy API Get Application Revision
-  x-api-slug: aws-codedeploy-api
-  description: Gets information about an application revision.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
-  humanURL: https://aws.amazon.com/codedeploy/
-  baseURL: ://///?Action=GetApplicationRevision
-  tags: Application Revisions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actiongetapplicationrevision-get-openapi.md
-- name: AWS CodeDeploy API List Application Revisions
-  x-api-slug: aws-codedeploy-api
+- name: AWS CodeDeploy API - List Application Revisions
+  x-api-slug: actionlistapplicationrevisions-get
   description: Lists information about revisions for an application.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
   humanURL: https://aws.amazon.com/codedeploy/
-  baseURL: ://///?Action=ListApplicationRevisions
-  tags: Application Revisions
+  baseURL: :///
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionlistapplicationrevisions-get-openapi.md
-- name: AWS CodeDeploy API Register Application Revision
-  x-api-slug: aws-codedeploy-api
-  description: Registers with AWS CodeDeploy a revision for the specified application.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
-  humanURL: https://aws.amazon.com/codedeploy/
-  baseURL: ://///?Action=RegisterApplicationRevision
-  tags: Application Revisions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionregisterapplicationrevision-get-openapi.md
-- name: AWS CodeDeploy API
-  x-api-slug: aws-codedeploy-api
-  description: AWS CodeDeploy is a service that automates code deployments to any
-    instance, including Amazon EC2 instances and instances running on-premises. AWS
-    CodeDeploy makes it easier for you to rapidly release new features, helps you
-    avoid downtime during application deployment, and handles the complexity of updating
-    your applications. You can use AWS CodeDeploy to automate software deployments,
-    eliminating the need for error-prone manual operations, and the service scales
-    with your infrastructure so you can easily deploy to one instance or thousands.
+- name: AWS CodeDeploy API - Batch Get Application Revisions
+  x-api-slug: actionbatchgetapplicationrevisions-get
+  description: Gets information about one or more application revisions.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
   humanURL: https://aws.amazon.com/codedeploy/
   baseURL: :///
-  tags: Revisions
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionbatchgetapplicationrevisions-get-openapi.md
+- name: AWS CodeDeploy API - Get Application Revision
+  x-api-slug: actiongetapplicationrevision-get
+  description: Gets information about an application revision.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
+  humanURL: https://aws.amazon.com/codedeploy/
+  baseURL: :///
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actiongetapplicationrevision-get-openapi.md
+- name: AWS CodeDeploy API - List Application Revisions
+  x-api-slug: actionlistapplicationrevisions-get
+  description: Lists information about revisions for an application.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
+  humanURL: https://aws.amazon.com/codedeploy/
+  baseURL: :///
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionlistapplicationrevisions-get-openapi.md
+- name: AWS CodeDeploy API - Register Application Revision
+  x-api-slug: actionregisterapplicationrevision-get
+  description: Registers with AWS CodeDeploy a revision for the specified application.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-codedeploy.png
+  humanURL: https://aws.amazon.com/codedeploy/
+  baseURL: :///
+  tags: Amazon Web Services, SDK, Orchestration, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revisions/master/_listings/aws-codedeploy/actionregisterapplicationrevision-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.codecommit.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://aws.codedeploy.stack.network
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codedeploy
 - type: x-documentation
